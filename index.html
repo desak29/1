@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> In Space: AngularJS Album </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+
+    <body ng-app="myApp">
+        <div back-img="images/0.jpg" style="linear-gradient(
+     rgba(255,255,255,0.2), 
+      rgba(230, 240, 230, 0.2)
+  
+    )">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div ng-controller="AlbumCtrl">
+                        <img src="images/planets.jpg" alt="AngularJS Logo" class="angLogo"/>
+                        <h2>AngularJS MVC Photo Album <small style="color:#d3d3d3">by Kochan Desai</small> </h2>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="albumImage">
+                                    <img id="featured" src="{{currentImage.image}}" alt="{{currentImage.description}}" />
+                                </div>
+                                <h3>{{currentImage.description}}</h3>
+                                <p class="badge"><span class="glyphicon glyphicon-star"></span>{{currentImage.stars}}</p>
+                                <br></br>
+                                
+                                <div id="planet_select">
+                                <select ng-model="categories" ng-options="category for category in imageCategories">
+                                    <option value="">All</option>
+                                </select>
+                                <label for="select">Select a Planet:</label>
+                                </div>
+                            </div>
+                            <!-- End of Column -->
+                            <div class="col-md-3">
+                                
+                                <div class="wrapper">
+                                    <ul class="list">
+                                       
+                                        <li ng-repeat="image in images | filter:categories" ng-click="setCurrentImage(image)">
+                                            <img ng-src="{{image.image}}" alt="{{image.description}}" />
+                                        </li>
+                                    </ul>
+                                    <!-- End of List -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+
+
+
+
+
+</body>
+
+</html>

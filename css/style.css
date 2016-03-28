@@ -1,0 +1,83 @@
+/* line 1, ../compass/sass/style.scss */
+body {
+  padding-top: 3.2rem;
+}
+
+/* line 2, ../compass/sass/style.scss */
+text {
+  color: #d3d3d3;
+}
+
+/* line 4, ../compass/sass/style.scss */
+h2 {
+  margin-bottom: 1.2rem;
+  float: left;
+  padding-left: .8rem;
+  color: #d3d3d3;
+}
+
+/* line 10, ../compass/sass/style.scss */
+h3 {
+  color: #d3d3d3;
+}
+
+/* line 14, ../compass/sass/style.scss */
+.albumImage img {
+  margin-bottom: .4rem;
+}
+
+/* line 16, ../compass/sass/style.scss */
+.angLogo {
+  float: left;
+  width: 50px;
+  padding-top: 1.0rem;
+}
+
+/* line 23, ../compass/sass/style.scss */
+.badge .glyphicon {
+  padding-right: .4rem;
+}
+
+/* line 25, ../compass/sass/style.scss */
+label, select {
+  float: right;
+  margin-left: 1rem;
+}
+
+/* line 29, ../compass/sass/style.scss */
+#planet_select {
+  float: left;
+}
+
+/* line 32, ../compass/sass/style.scss */
+#featured {
+  width: 95%;
+}
+
+/* line 38, ../compass/sass/style.scss */
+.wrapper .list {
+  list-style: none;
+  height: 100%;
+  margin-right: 5em;
+  overflow-y: auto;
+  float: left;
+}
+/* line 46, ../compass/sass/style.scss */
+.wrapper img {
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: block;
+  border: 2px solid #fff;
+}
+/* line 53, ../compass/sass/style.scss */
+.wrapper img:hover {
+  box-shadow: 0px 1px 4px #fff;
+  transition: all .2s ease-in-out;
+  border-color: #fff;
+}
+/* line 59, ../compass/sass/style.scss */
+.wrapper img:active {
+  opacity: .74;
+  box-shadow: 0px 1px 8px #fff;
+}

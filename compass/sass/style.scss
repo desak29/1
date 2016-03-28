@@ -1,0 +1,64 @@
+body { padding-top: 3.2rem; }
+text {color:#d3d3d3 }
+
+h2 {
+  margin-bottom: 1.2rem;
+  float: left;
+  padding-left: .8rem;
+  color:#d3d3d3 ;
+}
+h3{
+    color:#d3d3d3 
+}
+
+.albumImage img { margin-bottom: .4rem; }
+
+.angLogo {
+  float: left;
+  
+  width: 50px;
+  padding-top: 1.0rem;
+}
+
+.badge .glyphicon { padding-right: .4rem; }
+
+label, select {
+  float: right;
+  margin-left: 1rem;
+}
+#planet_select{
+    float:left;
+}
+#featured{
+    width:95%
+    
+}
+.wrapper {
+  
+  .list {
+    list-style: none;
+    height: 100%;
+    margin-right: 5em;
+    overflow-y: auto;
+    float:left;
+  }
+  
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: block;
+    border: 2px solid #fff;
+    
+    &:hover {
+      box-shadow: 0px 1px 4px #fff;
+      transition: all .2s ease-in-out;
+      border-color: #fff;
+    }
+    
+    &:active {
+      opacity: .74;
+      box-shadow: 0px 1px 8px #fff;
+    }
+  }
+}
