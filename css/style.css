@@ -47,14 +47,16 @@ label, select {
 /* line 29, ../compass/sass/style.scss */
 #planet_select {
   float: left;
+  text: #d3d3d3;
 }
 
-/* line 32, ../compass/sass/style.scss */
+/* line 33, ../compass/sass/style.scss */
 #featured {
   width: 95%;
+  margin-left: 3em;
 }
 
-/* line 38, ../compass/sass/style.scss */
+/* line 40, ../compass/sass/style.scss */
 .wrapper .list {
   list-style: none;
   height: 100%;
@@ -62,7 +64,7 @@ label, select {
   overflow-y: auto;
   float: left;
 }
-/* line 46, ../compass/sass/style.scss */
+/* line 48, ../compass/sass/style.scss */
 .wrapper img {
   width: 100%;
   margin-bottom: 1rem;
@@ -70,13 +72,13 @@ label, select {
   display: block;
   border: 2px solid #fff;
 }
-/* line 53, ../compass/sass/style.scss */
+/* line 55, ../compass/sass/style.scss */
 .wrapper img:hover {
   box-shadow: 0px 1px 4px #fff;
   transition: all .2s ease-in-out;
   border-color: #fff;
 }
-/* line 59, ../compass/sass/style.scss */
+/* line 61, ../compass/sass/style.scss */
 .wrapper img:active {
   opacity: .74;
   box-shadow: 0px 1px 8px #fff;
